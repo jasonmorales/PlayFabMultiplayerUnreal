@@ -77,6 +77,7 @@ bool FOnlineIdentityPlayFab::ApplyPlatformHTTPRequestData(const FString& Platfor
         }
     }
     FOnlineIdentityPlayFab::OnPopulatePlatformRequestDataCompleted(headersApplied, PlatformUserID, TMap<FString, FString>(), RequestBodyJson);
+#endif
     return headersApplied;
 }
 #endif // OSS_PLAYFAB_WIN64
