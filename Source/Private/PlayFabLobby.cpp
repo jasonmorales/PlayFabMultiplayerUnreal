@@ -1875,7 +1875,7 @@ bool FPlayFabLobby::GetSearchKeyFromSettingMappingTable(const FString& SettingKe
 	return false;
 }
 
-TPair<FString, EOnlineKeyValuePairDataType::Type>* FPlayFabLobby::FindSearchKey(FString& SearchKey)
+const TPair<FString, EOnlineKeyValuePairDataType::Type>* FPlayFabLobby::FindSearchKey(const FString& SearchKey) const
 {
 	return SearchKeyMappingTable.Find(SearchKey);
 }
